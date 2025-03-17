@@ -1,0 +1,10 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+/** @var $viewModel DevAll\Theme\ViewModel\LinkDevAll */
+/** @var $escaper Magento\Framework\Escaper */
+
+$viewModel = $block->getData('view_model')
+?>
+<li>
+    <a href="<?= $escaper->escapeHtml($viewModel->getLink()) ?>"><?= __('DevAll') ?></a>
+</li>
